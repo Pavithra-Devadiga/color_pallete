@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #83a8df, #c3cfe2);
+  background: linear-gradient(135deg, #c33764, #1d2671);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -17,7 +17,13 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: rgba(30, 30, 47, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+border: 1px solid rgba(255, 255, 255, 0.25);
+
   border-radius: 1rem;
   padding: 2rem;
   width: 100%;
@@ -28,12 +34,13 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 1.5rem;
-  color: #333;
+  color: #ffffff;
   position: relative;
   padding-bottom: 0.5rem;
 }
 
 h1::after {
+   background: linear-gradient(90deg, #c33764, #667eea);
   content: "";
   position: absolute;
   bottom: 0;
@@ -47,7 +54,8 @@ h1::after {
 
 #generate-btn {
   background: linear-gradient(45deg, #667eea, #764ba2);
-  color: white;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 50px;
@@ -55,11 +63,6 @@ h1::after {
   font-weight: 500;
   margin-bottom: 2rem;
   font-size: 1rem;
-}
-
-#generate-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(102, 126, 234, 0.3);
 }
 
 #generate-btn:active {
@@ -110,6 +113,26 @@ h1::after {
 
 .copy-btn:hover {
   color: #667eea;
+}
+
+.color-info {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(6px);
+
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.9rem;
+  color: #1e1e2f;
+}
+
+#generate-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+
+  box-shadow:
+    0 10px 30px rgba(118, 75, 162, 0.6);
 }
 
 @media (max-width: 768px) {
