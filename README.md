@@ -4,6 +4,9 @@ A modern **Color Palette Generator** built using **HTML, CSS, and JavaScript**.
 The application features a dark-themed container on a gradient background and allows users to generate random color palettes and copy hex codes instantly.
 
 ---
+🔗 **Live Demo**:
+
+https://pavithra-devadiga.github.io/color_pallete/
 
 ## ✨ Features
 
